@@ -1,8 +1,13 @@
 h1{
+    font-family: "Barlow",Sans-serif;
     font-size: 28px;
     font-weight: 700;
+    letter-spacing: -.6px;
 }
 
 p{
+    font-family: "Barlow",Sans-serif;
     font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: -.6px;
 }

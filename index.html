@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/components/titles.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="contact.html">
     <link rel="stylesheet" href="budget.html">
@@ -33,47 +35,47 @@
 
 <!--Slideshow-->
 
-<div id="slider">
-    <div class="slides">
-        <img src="styles/images/slideshow-01.png" alt="Imagem 1">
-        <img src="styles/images/slideshow-02.png" alt="Imagem 2">
-        <img src="styles/images/slideshow-03.png" alt="Imagem 3">
-        <img src="styles/images/slideshow-04.png" alt="Imagem 4">
-        <img src="styles/images/slideshow-05.png" alt="Imagem 5">
-        <img src="styles/images/slideshow-06.png" alt="Imagem 6">
+    <div id="slider">
+        <div class="slides">
+            <img src="styles/images/slideshow-01.png" alt="Imagem 1">
+            <img src="styles/images/slideshow-02.png" alt="Imagem 2">
+            <img src="styles/images/slideshow-03.png" alt="Imagem 3">
+            <img src="styles/images/slideshow-04.png" alt="Imagem 4">
+            <img src="styles/images/slideshow-05.png" alt="Imagem 5">
+            <img src="styles/images/slideshow-06.png" alt="Imagem 6">
+        </div>
+        <button class="prev"><img src="styles/images/left-arrow.png" alt=""></button>
+        <button class="next"><img src="styles/images/right-arrow.png" alt=""></button>
     </div>
-    <button class="prev"><img src="styles/images/left-arrow.png" alt=""></button>
-    <button class="next"><img src="styles/images/right-arrow.png" alt=""></button>
-</div>
-<script>
-    const slides = document.querySelectorAll('.slides img');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+    <script>
+        const slides = document.querySelectorAll('.slides img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
 
-    let currentSlide = 0;
+        let currentSlide = 0;
 
-    prevButton.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateSlides();
-    });
+        prevButton.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlides();
+        });
 
-    nextButton.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlides();
-    });
+        nextButton.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlides();
+        });
 
-    function updateSlides() {
-    slides.forEach((slide, index) => {
-        if (index === currentSlide) {
-        slide.style.display = 'block';
-        } else {
-        slide.style.display = 'none';
+        function updateSlides() {
+        slides.forEach((slide, index) => {
+            if (index === currentSlide) {
+            slide.style.display = 'block';
+            } else {
+            slide.style.display = 'none';
+            }
+        });
         }
-    });
-    }
 
-    updateSlides();
-</script>
+        updateSlides();
+    </script>
 
 <!--Sobre Nós-->
 
@@ -89,5 +91,46 @@
         </div>
     </div>
     
+    <div class="specialties">
+        <div class="quality">
+            <div class="text">
+                <h1>Qualidade</h1><br>
+                <p>Comprometimento total com as necessidades dos <br>nossos cliente (prazo de entrega, qualidade), <br>trabalhando com transparência e visando sempre <br>transformar negócios em longas parcerias.</p>
+            </div>
+        </div>
+        <div class="guarantee">
+            <div class="text">
+                <h1>Garantia</h1><br>
+                <p>Todas as etapas, desde a procedência da matéria <br>prima, recebimento, armazenamento, fabricação e <br>transporte são acompanhadas por nossa equipe, <br>para garantindo a qualidade do produto final </p>
+            </div>
+        </div>
+        <div class="distribution">
+            <div class="text">
+                <h1>Distribuição</h1><br>
+                <p>Entregamos em todo o território nacional com <br>agilidade e segurança!</p>
+            </div>
+        </div>
+    </div>
+
+<!--Produtos-->
+
+    <div class="products">
+        <div class="title">
+            <h1>Produtos</h1>
+        </div>
+        <div class="products-information">
+            <div class="products-row01">
+                <div class="product01"></div>
+                <div class="product02"></div>
+                <div class="product03"></div>
+            </div>
+            <div class="products-row02">
+                <div class="product04"></div>
+                <div class="product05"></div>
+                <div class="product06"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
