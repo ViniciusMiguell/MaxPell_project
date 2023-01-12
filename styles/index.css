@@ -158,6 +158,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 
 .title h1{
@@ -167,7 +168,75 @@
 }
 
 .products-information{
-    background-color: aqua;
     width: 100%;
-    height: 759.5px;
+    height: 718px;
+    margin-top: -15px;
+}
+
+.products-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.products-row .product{
+    width: 353px;
+    height: 359px;
+    margin-left: 16px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+}
+
+.product img{
+    width: 353px;
+    height: 359px;
+    border-radius: 5%;
+}
+
+/*Endereço*/
+
+.address-space{
+    width: 100%;
+    height: 80px;
+}
+
+.address-backgroud{
+    background-color: #54595F;
+    width: 100%;
+    height: 534px;
+    text-align: left;
+}
+
+.address-content{
+    margin-left: 435px;
+}
+
+.address-content h1{
+    color: #fff;
+    font-family: "Barlow",Sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.address-content p{
+    margin-top: 35px;
+    color: #fff;
+    font-family: "Barlow",Sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.9em;
+    letter-spacing: -.6px;
+}
+
+.address-content button{
+    width: 145px;
+    height: 35px;
+    margin-top: 35px;
+    background-color: #61CE70;
+    border-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
 }
