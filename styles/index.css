@@ -206,10 +206,12 @@
     width: 100%;
     height: 534px;
     text-align: left;
+    display: flex;
 }
 
 .address-content{
-    margin-left: 435px;
+    margin-left: 360px;
+    padding-top: 60px;
 }
 
 .address-content h1{
@@ -220,14 +222,14 @@
 }
 
 .address-content p{
-    margin-top: 35px;
+    margin-top: 30px;
     color: #fff;
     font-family: "Barlow",Sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
     font-style: normal;
     line-height: 1.9em;
-    letter-spacing: -.6px;
+    /**letter-spacing: -.6px;**/
 }
 
 .address-content button{
@@ -239,4 +241,19 @@
     color: #fff;
     font-size: 15px;
     text-align: center;
+}
+
+.address-icon{
+    width: 353px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 115px;
+    margin-left: 100px;
+}
+
+.address-icon img{
+    width: 280px;
+    height: 280px;
 }
