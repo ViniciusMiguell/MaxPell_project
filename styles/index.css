@@ -169,11 +169,13 @@
 
 .products-information{
     width: 100%;
-    height: 718px;
+    height: 782px;
     margin-top: -15px;
 }
 
 .products-row{
+    width: 100%;
+    height: 397px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,16 +183,30 @@
 }
 
 .products-row .product{
-    width: 353px;
-    height: 359px;
+    width: 375px;
+    height: 375px;
     margin-left: 16px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+
+}
+
+.products-row .product1{
+    width: 375px;
+    height: 375px;
     border-radius: 5%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
 }
 
 .product img{
-    width: 353px;
-    height: 359px;
+    width: 375px;
+    height: 375px;
+    border-radius: 5%;
+}
+
+.product1 img{
+    width: 375px;
+    height: 375px;
     border-radius: 5%;
 }
 
@@ -210,7 +226,7 @@
 }
 
 .address-content{
-    margin-left: 385px;
+    margin-left: 410px;
     padding-top: 60px;
 }
 
@@ -250,10 +266,39 @@
     justify-content: center;
     align-items: center;
     margin-top: 115px;
-    margin-left: 120px;
+    margin-left: 200px;
 }
 
 .address-icon img{
     width: 280px;
     height: 280px;
+}
+
+.address-maps{
+    background-color: #61CE70;
+    width: 100%;
+    height: 350px;
+}
+
+/*Rodapé*/
+
+.baseboard{
+    background-color: #0c090a;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    align-items: center;
+}
+
+.baseboard img{
+    width: 126px;
+    height: 35px;
+    margin-left: 380px;
+}
+
+.baseboard p{
+    color: #fff;
+    font-size: 11px;
+    margin-left: 325px;
+    letter-spacing: 0px;
 }
