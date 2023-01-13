@@ -66,8 +66,13 @@
   }
 
 /*Sobre nós*/
-    
+ 
+.anchor-link-aboutUs{
+    margin-top: -200px;
+}
+
 .background-image{
+    margin-top: 200px;
     background-position: center center;
     background-size: cover;
     background-image: url(images/backgroud.jpg);
@@ -151,6 +156,14 @@
 }
 
 /*Produtos*/
+
+.anchor-link-products{
+    margin-top: -50px;
+}
+
+.products{
+    margin-top: 50px;
+}
 
 .products .title{
     width: 100%;
