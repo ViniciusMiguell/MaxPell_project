@@ -51,3 +51,8 @@ header.sticky{
     border-radius: 25px;
 }
 
+.whats img{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
